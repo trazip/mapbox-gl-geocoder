@@ -1,10 +1,8 @@
 {
-  "name": "@mapbox/mapbox-gl-geocoder",
+  "name": "@trazip/mapbox-gl-geocoder",
   "version": "5.0.2",
-  "description": "A geocoder control for Mapbox GL JS",
+  "description": "A custom geocoder control for Mapbox GL JS",
   "main": "lib/index.js",
-  "unpkg": "dist/mapbox-gl-geocoder.min.js",
-  "style": "lib/mapbox-gl-geocoder.css",
   "scripts": {
     "start": "budo debug/index.js --dir debug --live -- -t brfs ",
     "prepublish": "NODE_ENV=production && mkdir -p dist && browserify lib/index.js --transform [ babelify --global ] --standalone MapboxGeocoder | uglifyjs -c -m > dist/mapbox-gl-geocoder.min.js && cp lib/mapbox-gl-geocoder.css dist/",
@@ -20,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/mapbox/mapbox-gl-geocoder.git"
+    "url": "git+ssh://git@github.com/trazip/mapbox-gl-geocoder.git"
   },
   "engines": {
     "node": ">=6"
@@ -30,12 +28,12 @@
     "osm",
     "gl"
   ],
-  "author": "Mapbox",
+  "author": "Mapbox/Trazip",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mapbox/mapbox-gl-geocoder/issues"
+    "url": "https://github.com/trazip/mapbox-gl-geocoder/issues"
   },
-  "homepage": "https://github.com/mapbox/mapbox-gl-geocoder#readme",
+  "homepage": "https://github.com/trazip/mapbox-gl-geocoder#readme",
   "devDependencies": {
     "@babel/core": "^7.16.12",
     "@babel/preset-env": "^7.16.11",
